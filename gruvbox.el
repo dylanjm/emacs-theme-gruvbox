@@ -103,13 +103,13 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; Built-in syntax
 
-     (font-lock-builtin-face                            (:foreground gruvbox-bright_orange :weight bold))
-     (font-lock-constant-face                           (:foreground gruvbox-bright_purple :weight bold))
-     (font-lock-comment-face                            (:foreground gruvbox-dark4 :slant italic))
+     (font-lock-builtin-face                            (:foreground gruvbox-bright_orange :weight 'bold))
+     (font-lock-constant-face                           (:foreground gruvbox-bright_purple :weight 'bold))
+     (font-lock-comment-face                            (:foreground gruvbox-dark4 :slant 'italic))
      (font-lock-function-name-face                      (:foreground gruvbox-bright_yellow))
-     (font-lock-keyword-face                            (:foreground gruvbox-bright_red :weight bold))
+     (font-lock-keyword-face                            (:foreground gruvbox-bright_red :weight 'bold))
      (font-lock-string-face                             (:foreground gruvbox-bright_green))
-     (font-lock-doc-face                                (:foreground gruvbox-faded-green))
+     (font-lock-doc-face                                (:foreground gruvbox-dark_green))
      (font-lock-variable-name-face                      (:foreground gruvbox-bright_blue))
      (font-lock-type-face                               (:foreground gruvbox-bright_purple))
      (font-lock-warning-face                            (:foreground gruvbox-bright_red :bold t :background gruvbox-dark0))
