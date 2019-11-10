@@ -15,7 +15,6 @@
 ;; Version: 1.26.0
 
 ;; Package-Requires: ((autothemer "0.2"))
-
 ;;; Commentary:
 
 ;; Using autothemer since 1.00
@@ -69,7 +68,7 @@
 Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
 (defun gruvbox-screenshot (prefix)
-  "Take a screenshot of all versions of the gruvbox theme"
+  "Take a screenshot of all versions of the gruvbox theme using PREFIX."
   (interactive "sScreenshot Prefix: ")
   (dolist (theme '(gruvbox-light-soft
                    gruvbox-light-medium
@@ -83,6 +82,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
                            prefix theme))))
 
 (defmacro gruvbox-deftheme (name description palette &rest body)
+  "Defining the gruvbox theme NAME DESCRIPTION PALETTE BODY."
   `(autothemer-deftheme
     ,name
     ,description
@@ -100,6 +100,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (window-divider                            (:foreground gruvbox-dark1))
      (link                                      (:foreground gruvbox-faded_blue :underline t))
      (shadow                                    (:foreground gruvbox-dark4))
+     (fixed-pitch                               (:inherit default))
 
      ;; Built-in syntax
 
@@ -287,31 +288,31 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (company-echo-common                       (:foreground gruvbox-dark_red))
 
      ;; diredfl
-     (diredfl-autofile-name          (:foreground gruvbox-light4))
-     (diredfl-compressed-file-name   (:foreground gruvbox-faded_yellow))
+     (diredfl-date-time (:foreground gruvbox-bright_aqua :weight 'light))
+     (diredfl-number (:foreground gruvbox-bright_green))
+     (diredfl-symlink (:foreground gruvbox-bright_green))
+     (diredfl-no-priv (:foreground gruvbox-light3))
+     (diredfl-dir-priv (:foreground gruvbox-bright_blue))
+     (diredfl-dir-name (:foreground gruvbox-faded_blue))
+     (diredfl-deletion (:foreground gruvbox-dark0_hard :background gruvbox-bright_red))
+     (diredfl-read-priv(:foreground gruvbox-bright_purple))
+     (diredfl-rare-priv (:foreground gruvbox-bright_purple))
+     (diredfl-link-priv (:foreground gruvbox-dark0_hard :background gruvbox-bright_purple))
+     (diredfl-flag-mark (:foreground gruvbox-dark0_hard :background gruvbox-faded_yellow :weight 'bold))
+     (diredfl-file-name (:foreground gruvbox-light3))
+     (diredfl-exec-priv (:foreground gruvbox-bright_green))
+     (diredfl-write-priv (:foreground gruvbox-bright_red))
+     (diredfl-other-priv (:foreground gruvbox-bright_purple))
+     (diredfl-file-suffix (:foreground gruvbox-bright_purple))
+     (diredfl-dir-heading (:foreground gruvbox-faded_blue :weight 'bold))
+     (diredfl-autofile-name (:foreground gruvbox-light3))
+     (diredfl-flag-mark-line (:foreground gruvbox-dark0_hard :background gruvbox-faded_yellow :weight 'bold))
+     (diredfl-executable-tag (:foreground gruvbox-bright_purple :weight 'bold))
+     (diredfl-ignored-file-name (:foreground gruvbox-dark1))
+     (diredfl-deletion-file-name (:foreground gruvbox-dark0_hard :background gruvbox-bright_red))
+     (diredfl-tagged-autofile-name (:foreground gruvbox-dark4))
+     (diredfl-compressed-file-name (:foreground gruvbox-light3))
      (diredfl-compressed-file-suffix (:foreground gruvbox-bright_orange))
-     (diredfl-date-time              (:foreground gruvbox-bright_aqua :weight 'light))
-     (diredfl-deletion               (:foreground gruvbox-dark0_hard :background gruvbox-bright_red))
-     (diredfl-deletion-file-name     (:foreground gruvbox-dark0_hard :background gruvbox-bright_red))
-     (diredfl-dir-heading           (:foreground gruvbox-faded_blue :weight 'bold))
-     (diredfl-dir-name              (:foreground gruvbox-faded_blue))
-     (diredfl-dir-priv              (:foreground gruvbox-bright_blue))
-     (diredfl-exec-priv             (:foreground gruvbox-bright_green))
-     (diredfl-executable-tag        (:foreground gruvbox-bright_purple))
-     (diredfl-file-name             (:foreground gruvbox-light3))
-     (diredfl-file-suffix           (:foreground gruvbox-light3))
-     (diredfl-flag-mark             (:foreground gruvbox-dark0_hard :background gruvbox-faded_yellow :weight 'bold))
-     (diredfl-flag-mark-line        (:foreground gruvbox-dark0_hard :background gruvbox-bright_orange))
-     (diredfl-ignored-file-name     (:foreground gruvbox-gray))
-     (diredfl-link-priv             (:foreground gruvbox-bright_purple))
-     (diredfl-no-priv               (:foreground gruvbox-light3))
-     (diredfl-number                (:foreground gruvbox-bright_orange))
-     (diredfl-other-priv            (:foreground gruvbox-bright_purple))
-     (diredfl-rare-priv             (:foreground gruvbox-bright_purple))
-     (diredfl-read-priv             (:foreground gruvbox-bright_purple))
-     (diredfl-symlink               (:foreground gruvbox-faded_green))
-     (diredfl-tagged-autofile-name  (:foreground gruvbox-dark4))
-     (diredfl-write-priv            (:foreground gruvbox-bright_red))
 
      ;; tool tips
      (tooltip                                   (:foreground gruvbox-light1 :background gruvbox-dark1))
@@ -361,16 +362,13 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-ellipsis                              (:foreground gruvbox-light4))
      (org-date                                  (:foreground gruvbox-bright_blue :underline t))
      (org-sexp-date                             (:foreground gruvbox-faded_blue :underline t))
-     (org-tag                                   (:bold t :weight 'bold))
      (org-list-dt                               (:bold t :weight 'bold))
      (org-todo                                  (:foreground gruvbox-bright_red :weight 'bold :bold t))
      (org-done                                  (:foreground gruvbox-bright_aqua :weight 'bold :bold t))
      (org-agenda-done                           (:foreground gruvbox-bright_aqua))
      (org-headline-done                         (:foreground gruvbox-bright_aqua))
-     (org-table                                 (:foreground gruvbox-bright_blue))
-     ;; (org-block                                 (:background gruvbox-dark1))
-     (org-block-begin-line                      (:underline gruvbox-dark4 :background gruvbox-dark0 :foreground gruvbox-dark4))
-     (org-block-end-line                        (:overline gruvbox-dark4 :background gruvbox-dark0 :foreground gruvbox-dark4))
+     (org-block-begin-line                      (:underline gruvbox-dark4 :background gruvbox-dark0 :foreground gruvbox-dark4 :extend t))
+     (org-block-end-line                        (:overline gruvbox-dark4 :background gruvbox-dark0 :foreground gruvbox-dark4 :extend t))
      (org-formula                               (:foreground gruvbox-bright_yellow))
      (org-document-title                        (:foreground gruvbox-faded_blue))
      (org-document-info                         (:foreground gruvbox-faded_blue))
@@ -384,6 +382,17 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-time-grid                             (:foreground gruvbox-faded_orange))
      (org-latex-and-related                     (:foreground gruvbox-bright_blue))
      (org-quote                                 (:background gruvbox-dark0_soft :foreground gruvbox-bright_yellow :extend t))
+     (org-block                                 (:inherit fixed-pitch))
+     (org-code                                  (:inherit (shadow fixed-pitch)))
+     (org-document-info-keyword                 (:inherit (shadow fixed-pitch)))
+     (org-indent                                (:inherit (org-hide fixed-pitch)))
+     (org-meta-line                             (:inherit (font-lock-comment-face fixed-pitch)))
+     (org-property-value                        (:inherit fixed-pitch))
+     (org-special-keyword                       (:inherit (font-lock-comment-face fixed-pitch)))
+     (org-table                                 (:inherit fixed-pitch :foreground "#83a598"))
+     (org-tag                                   (:inherit (shadow fixed-pitch) :weight bold))
+     (org-verbatim                              (:inherit (shadow fixed-pitch)))
+
 
      ;; org-habit
      (org-habit-clear-face                      (:background gruvbox-faded_blue))
@@ -685,4 +694,4 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 ;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
 ;; End:
 
-;;; gruvbox-dark-theme.el ends here
+;;; gruvbox.el ends here
