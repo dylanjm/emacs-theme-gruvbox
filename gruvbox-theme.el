@@ -128,7 +128,6 @@
                                 ,gruvbox-neutral_aqua
                                 ,gruvbox-light1])))
 
-
 ;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
