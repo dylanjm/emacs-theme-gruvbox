@@ -114,7 +114,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (font-lock-doc-face                                (:foreground gruvbox-bright_green :slant 'italic))
      (font-lock-variable-name-face                      (:foreground gruvbox-bright_blue))
      (font-lock-type-face                               (:foreground gruvbox-bright_purple))
-     (font-lock-warning-face                            (:foreground gruvbox-bright_red :bold t :background gruvbox-dark0))
+     (font-lock-warning-face                            (:foreground gruvbox-bright_red :bold t :background gruvbox-dark0_hard))
 
      ;; Basic faces
      (error                                             (:foreground gruvbox-bright_red :bold t))
