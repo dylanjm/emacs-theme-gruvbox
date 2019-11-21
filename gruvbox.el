@@ -78,18 +78,18 @@
      (hl-line             (:background gruvbox-dark1 :extend t))
      (link                (:foreground gruvbox-faded_blue :underline t))
      (minibuffer-prompt   (:background gruvbox-dark0_hard :foreground gruvbox-bright_green :bold t))
-     (mode-line           (:inherit 'variable-pitch :background gruvbox-dark0_hard :foreground gruvbox-light2 :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
-     (mode-line-inactive  (:inherit 'variable-pitch :background gruvbox-dark0_hard :foreground gruvbox-dark4 :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
+     (mode-line           (:inherit 'variable-pitch :height 200 :background gruvbox-dark0 :foreground gruvbox-light3 :box (:line-width 8 :color gruvbox-dark0_hard) :overline nil :underline nil))
+     (mode-line-inactive  (:inherit 'variable-pitch :height 200 :background gruvbox-dark0_hard :foreground gruvbox-light1 :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
      (region              (:background gruvbox-dark2 :extend t))
      (secondary-selection (:background gruvbox-dark1 :extend t))
      (shadow              (:foreground gruvbox-dark4))
-     (vertical-border     (:foreground gruvbox-dark2))
-     (window-divider      (:foreground gruvbox-dark1))
+     (vertical-border     (:foreground gruvbox-dark4))
+     (window-divider      (:foreground gruvbox-light4))
 
 
      ;; Built-in syntax
 
-     (font-lock-builtin-face                            (:foreground gruvbox-bright_orange :background gruvbox-dark0_hard))
+     (font-lock-builtin-face                            (:foreground gruvbox-bright_orange))
      (font-lock-constant-face                           (:foreground gruvbox-bright_purple))
      (font-lock-comment-face                            (:foreground gruvbox-dark4 :slant 'italic))
      (font-lock-function-name-face                      (:foreground gruvbox-bright_yellow))
@@ -98,7 +98,7 @@
      (font-lock-doc-face                                (:foreground gruvbox-bright_green :slant 'italic))
      (font-lock-variable-name-face                      (:foreground gruvbox-bright_blue))
      (font-lock-type-face                               (:foreground gruvbox-bright_purple))
-     (font-lock-warning-face                            (:foreground gruvbox-bright_red :bold t :background gruvbox-dark0_hard))
+     (font-lock-warning-face                            (:foreground gruvbox-bright_red :bold t))
 
      ;; Basic faces
      (error                                             (:foreground gruvbox-bright_red :bold t))
@@ -333,8 +333,8 @@
      (org-table                                 (:inherit 'fixed-pitch :foreground "#83a598"))
      (org-tag                                   (:inherit ('shadow 'fixed-pitch) :weight 'bold))
      (org-verbatim                              (:inherit ('shadow 'fixed-pitch)))
-     (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :underline gruvbox-dark2 :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
-     (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :overline gruvbox-dark2 :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
+     (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
+     (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
 
 
 
