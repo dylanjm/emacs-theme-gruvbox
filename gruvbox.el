@@ -333,8 +333,8 @@
      (org-table                                 (:inherit 'fixed-pitch :foreground "#83a598"))
      (org-tag                                   (:inherit ('shadow 'fixed-pitch) :weight 'bold))
      (org-verbatim                              (:inherit ('shadow 'fixed-pitch)))
-     (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :underline gruvbox-dark2 :background gruvbox-dark0 :foreground gruvbox-dark4 :extend t))
-     (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :overline gruvbox-dark2 :background gruvbox-dark0 :foreground gruvbox-dark4 :extend t))
+     (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :underline gruvbox-dark2 :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
+     (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :overline gruvbox-dark2 :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
 
 
 
