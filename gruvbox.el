@@ -56,6 +56,7 @@
 
 (unless (>= emacs-major-version 24)
   (error "Requires Emacs 24 or later"))
+
 ;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
@@ -63,30 +64,13 @@
                   (file-name-as-directory
                    (file-name-directory load-file-name))))
 
-(defvar gruvbox-screenshot-command "scrot -u %s%s.png"
-  "Command used to take automated screenshots for gruvbox.
-Should contain 2 %s constructs to allow for theme name and directory/prefix")
-
-(defun gruvbox-screenshot (prefix)
-  "Take a screenshot of all versions of the gruvbox theme using PREFIX."
-  (interactive "sScreenshot Prefix: ")
-  (dolist (theme '(gruvbox-light-soft
-                   gruvbox-light-medium
-                   gruvbox-light-hard
-                   gruvbox-dark-soft
-                   gruvbox-dark-medium
-                   gruvbox-dark-hard))
-    (load-theme theme t)
-    (redisplay t)
-    (shell-command (format gruvbox-screenshot-command
-                           prefix theme))))
-
 (defmacro gruvbox-deftheme (name description palette &rest body)
   "Defining the gruvbox theme NAME DESCRIPTION PALETTE BODY."
   `(autothemer-deftheme
     ,name
     ,description
     ,palette
+
     ((cursor              (:background gruvbox-light0))
      (default             (:background gruvbox-bg :foreground gruvbox-light1))
      (fixed-pitch         (:background gruvbox-bg :foreground gruvbox-light1))
@@ -296,90 +280,6 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (message-cited-text                        (:inherit 'font-lock-comment-face))
      (message-mml                               (:foreground gruvbox-faded_green :weight 'bold))
 
-     ;; (org-agenda-calendar-event)
-     ;; (org-agenda-calendar-sexp)
-     ;; (org-agenda-clocking)
-     ;; (org-agenda-column-dateline)
-     ;; (org-agenda-current-time)
-     ;; (org-agenda-date)
-     ;; (org-agenda-date-today)
-     ;; (org-agenda-date-weekend)
-     ;; (org-agenda-diary)
-     ;; (org-agenda-dimmed-todo-face)
-     ;; (org-agenda-done)
-     ;; (org-agenda-filter-category)
-     ;; (org-agenda-filter-effort)
-     ;; (org-agenda-filter-regexp)
-     ;; (org-agenda-filter-tags)
-     ;; (org-agenda-restriction-lock)
-     ;; (org-agenda-structure)
-     ;; (org-archived)
-     ;; (org-block)
-     ;; (org-block-begin-line)
-     ;; (org-block-end-line)
-     ;; (org-checkbox)
-     ;; (org-checkbox-statistics-done)
-     ;; (org-checkbox-statistics-todo)
-     ;; (org-clock-overlay)
-     ;; (org-code)
-     ;; (org-column)
-     ;; (org-column-title)
-     ;; (org-date)
-     ;; (org-date-selected)
-     ;; (org-default)
-     ;; (org-document-info)
-     ;; (org-document-info-keyword)
-     ;; (org-document-title)
-     ;; (org-done)
-     ;; (org-drawer)
-     ;; (org-ellipsis)
-     ;; (org-footnote)
-     ;; (org-formula)
-     ;; (org-habit-alert-face)
-     ;; (org-habit-alert-future-face)
-     ;; (org-habit-clear-face)
-     ;; (org-habit-clear-future-face)
-     ;; (org-habit-overdue-face)
-     ;; (org-habit-overdue-future-face)
-     ;; (org-habit-ready-face)
-     ;; (org-habit-ready-future-face)
-     ;; (org-headline-done)
-     ;; (org-hide)
-     ;; (org-indent)
-     ;; (org-latex-and-related)
-     ;; (org-level-1)
-     ;; (org-level-2)
-     ;; (org-level-3)
-     ;; (org-level-4)
-     ;; (org-level-5)
-     ;; (org-level-6)
-     ;; (org-level-7)
-     ;; (org-level-8)
-     ;; (org-link)
-     ;; (org-list-dt)
-     ;; (org-macro)
-     ;; (org-meta-line)
-     ;; (org-mode-line-clock)
-     ;; (org-mode-line-clock-overrun)
-     ;; (org-priority)
-     ;; (org-property-value)
-     ;; (org-quote)
-     ;; (org-scheduled)
-     ;; (org-scheduled-previously)
-     ;; (org-scheduled-today)
-     ;; (org-sexp-date)
-     ;; (org-special-keyword)
-     ;; (org-table)
-     ;; (org-tag)
-     ;; (org-tag-group)
-     ;; (org-target)
-     ;; (org-time-grid)
-     ;; (org-todo)
-     ;; (org-upcoming-deadline)
-     ;; (org-upcoming-distant-deadline)
-     ;; (org-verbatim)
-     ;; (org-verse)
-     ;; (org-warning)
 
      ;; org-mode
      (org-hide                                  (:foreground gruvbox-dark0))
