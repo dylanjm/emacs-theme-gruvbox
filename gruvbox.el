@@ -253,6 +253,15 @@
      (diredfl-compressed-file-name (:foreground gruvbox-light3))
      (diredfl-compressed-file-suffix (:foreground gruvbox-bright_orange))
 
+     ;; dired-k
+     (dired-k-added (:foreground gruvbox-bright_yellow))
+     (dired-k--dummy (:foreground gruvbox-bright_purple))
+     (dired-k-ignored (:foreground gruvbox-dark4))
+     (dired-k-commited (:foreground gruvbox-bright_green))
+     (dired-k-modified (:foreground gruvbox-bright_yellow))
+     (dired-k-directory (:foreground gruvbox-faded_aqua))
+     (dired-k-untracked (:foreground gruvbox-bright_red))
+
      ;; tool tips
      (tooltip                                   (:foreground gruvbox-light1 :background gruvbox-dark1))
 
@@ -297,7 +306,7 @@
      (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
      (org-warning                               (:foreground gruvbox-bright_red :weight 'bold :underline nil :bold t))
      (org-archived                              (:foreground gruvbox-light0 :weight 'bold))
-     (org-link                                  (:inherit 'fixed-pitch :foreground gruvbox-faded_aqua :background nil :underline t))
+     (org-link                                  (:inherit 'org-table 'variable-pitch :foreground gruvbox-bright_purple :background nil :underline t))
      (org-footnote                              (:foreground gruvbox-bright_aqua :underline t))
      (org-ellipsis                              (:foreground gruvbox-light4))
      (org-date                                  (:foreground gruvbox-bright_blue :underline t))
