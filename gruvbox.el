@@ -306,7 +306,7 @@
      (org-sexp-date                             (:foreground gruvbox-faded_blue :underline t))
      (org-list-dt                               (:bold t :weight 'bold))
 
-     (org-formula                               (:foreground gruvbox-bright_yellow))
+     (org-formula                               (:inherit 'fixed-pitch :foreground gruvbox-bright_yellow))
      (org-document-title                        (:foreground gruvbox-faded_blue))
      (org-document-info                         (:foreground gruvbox-faded_blue))
      (org-agenda-structure                      (:inherit 'font-lock-comment-face))
