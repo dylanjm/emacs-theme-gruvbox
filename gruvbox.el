@@ -306,7 +306,7 @@
      (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
      (org-warning                               (:foreground gruvbox-bright_red :weight 'bold :underline nil :bold t))
      (org-archived                              (:foreground gruvbox-light0 :weight 'bold))
-     (org-link                                  (:foreground gruvbox-bright_purple :background nil :underline t))
+     (org-link                                  (:foreground gruvbox-faded_aqua :background nil :underline t))
      (org-footnote                              (:foreground gruvbox-bright_aqua :underline t))
      (org-ellipsis                              (:foreground gruvbox-light4))
      (org-date                                  (:foreground gruvbox-bright_blue :underline t))
