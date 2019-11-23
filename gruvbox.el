@@ -306,7 +306,7 @@
      (org-sexp-date                             (:foreground gruvbox-faded_blue :underline t))
      (org-list-dt                               (:bold t :weight 'bold))
 
-     (org-formula                               (:inherit 'fixed-pitch :foreground gruvbox-bright_yellow))
+     (org-formula                               (:inherit 'fixed-pitch :foreground gruvbox-bright_yellow :background gruvbox-dark0))
      (org-document-title                        (:foreground gruvbox-faded_blue))
      (org-document-info                         (:foreground gruvbox-faded_blue))
      (org-agenda-structure                      (:inherit 'font-lock-comment-face))
@@ -332,7 +332,7 @@
      (org-meta-line                             (:inherit ('font-lock-comment-face 'fixed-pitch)))
      (org-property-value                        (:inherit 'fixed-pitch))
      (org-special-keyword                       (:inherit ('font-lock-comment-face 'fixed-pitch)))
-     (org-table                                 (:inherit 'fixed-pitch :foreground "#83a598"))
+     (org-table                                 (:inherit 'fixed-pitch :foreground gruvbox-faded_blue :background gruvbox-dark0))
      (org-tag                                   (:inherit ('shadow 'fixed-pitch) :weight 'bold))
      (org-verbatim                              (:inherit ('shadow 'fixed-pitch)))
      (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
