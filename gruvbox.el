@@ -78,8 +78,10 @@
      (hl-line             (:background gruvbox-dark1 :extend t))
      (link                (:foreground gruvbox-faded_blue :underline t))
      (minibuffer-prompt   (:background gruvbox-dark0_hard :foreground gruvbox-bright_green :bold t))
-     (mode-line           (:inherit 'variable-pitch :height 200 :background gruvbox-dark0 :foreground gruvbox-light3 :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
-     (mode-line-inactive  (:inherit 'variable-pitch :height 200 :background gruvbox-dark0_hard :foreground gruvbox-light1 :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
+     (mode-line           (:inherit 'variable-pitch :background gruvbox-dark0 :foreground gruvbox-light3
+                                    :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
+     (mode-line-inactive  (:inherit 'variable-pitch :background gruvbox-dark0_hard :foreground gruvbox-light1
+                                    :box (:line-width 8 :color gruvbox-dark0) :overline nil :underline nil))
      (region              (:background gruvbox-dark2 :extend t))
      (secondary-selection (:background gruvbox-dark1 :extend t))
      (shadow              (:foreground gruvbox-dark4))
