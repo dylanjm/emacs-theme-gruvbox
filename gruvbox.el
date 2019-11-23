@@ -292,7 +292,7 @@
 
      ;; org-mode
      (org-hide                                  (:foreground gruvbox-dark0))
-     (org-level-1                               (:foreground gruvbox-bright_blue :extend t))
+     (org-level-1                               (:foreground gruvbox-bright_blue ))
      (org-level-2                               (:foreground gruvbox-bright_yellow))
      (org-level-3                               (:foreground gruvbox-bright_purple))
      (org-level-4                               (:foreground gruvbox-bright_red))
@@ -300,48 +300,58 @@
      (org-level-6                               (:foreground gruvbox-bright_aqua))
      (org-level-7                               (:foreground gruvbox-faded_blue))
      (org-level-8                               (:foreground gruvbox-bright_orange))
-     (org-special-keyword                       (:inherit 'font-lock-comment-face))
+
 
      (org-column                                (:background gruvbox-dark0))
      (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
      (org-warning                               (:foreground gruvbox-bright_red :weight 'bold :underline nil :bold t))
      (org-archived                              (:foreground gruvbox-light0 :weight 'bold))
-     (org-link                                  (:foreground gruvbox-faded_aqua :background nil :underline t))
-     (org-footnote                              (:foreground gruvbox-bright_aqua :underline t))
+
+     (org-footnote                              (:foreground gruvbox-bright_aqua))
      (org-ellipsis                              (:foreground gruvbox-light4))
      (org-date                                  (:foreground gruvbox-bright_blue :underline t))
      (org-sexp-date                             (:foreground gruvbox-faded_blue :underline t))
      (org-list-dt                               (:bold t :weight 'bold))
 
-     (org-formula                               (:inherit 'fixed-pitch :foreground gruvbox-bright_yellow :background gruvbox-dark0))
-     (org-document-title                        (:foreground gruvbox-faded_blue))
+
+     (org-document-title                        (:foreground gruvbox-faded_blue :height 220))
      (org-document-info                         (:foreground gruvbox-faded_blue))
+
+     (org-special-keyword                       (:inherit 'font-lock-comment-face))
      (org-agenda-structure                      (:inherit 'font-lock-comment-face))
      (org-agenda-date-today                     (:foreground gruvbox-light0 :weight 'bold :italic t))
      (org-scheduled                             (:foreground gruvbox-bright_yellow))
      (org-time-grid                             (:foreground gruvbox-faded_orange))
      (org-latex-and-related                     (:foreground gruvbox-bright_blue))
      (org-quote                                 (:background gruvbox-dark0_soft :foreground gruvbox-bright_yellow :extend t))
+     (org-headline-done                         (:foreground gruvbox-bright_aqua))
+
+
+     (org-upcoming-deadline                     (:inherit 'fixed-pitch))
+     (org-drawer                                (:inherit 'fixed-pitch))
+     (org-block                                 (:inherit 'fixed-pitch))
+     (org-property-value                        (:inherit 'fixed-pitch))
 
      (org-scheduled-today                       (:inherit 'fixed-pitch :foreground gruvbox-bright_blue))
      (org-scheduled-previously                  (:inherit 'fixed-pitch :foreground gruvbox-faded_red))
-     (org-upcoming-deadline                     (:inherit 'fixed-pitch))
      (org-deadline-announce                     (:inherit 'fixed-pitch :foreground gruvbox-faded_red))
      (org-todo                                  (:inherit 'fixed-pitch :foreground gruvbox-bright_red :weight 'bold :bold t))
      (org-done                                  (:inherit 'fixed-pitch :foreground gruvbox-bright_aqua :weight 'bold :bold t))
-     (org-drawer                                (:inherit 'fixed-pitch))
      (org-agenda-done                           (:inherit 'fixed-pitch :foreground gruvbox-bright_aqua))
-     (org-headline-done                         (:foreground gruvbox-bright_aqua))
-     (org-block                                 (:inherit 'fixed-pitch))
+     (org-link                                  (:inherit 'fixed-pitch :foreground gruvbox-faded_aqua :background nil :underline t))
+     (org-formula                               (:inherit 'fixed-pitch :foreground gruvbox-bright_yellow :background gruvbox-dark0))
+     (org-table                                 (:inherit 'fixed-pitch :foreground gruvbox-faded_blue :background gruvbox-dark0))
+
+
      (org-code                                  (:inherit ('shadow 'fixed-pitch)))
      (org-document-info-keyword                 (:inherit ('shadow 'fixed-pitch)))
-     (org-indent                                (:inherit ('org-hide 'fixed-pitch)))
-     (org-meta-line                             (:inherit ('font-lock-comment-face 'fixed-pitch)))
-     (org-property-value                        (:inherit 'fixed-pitch))
-     (org-special-keyword                       (:inherit ('font-lock-comment-face 'fixed-pitch)))
-     (org-table                                 (:inherit 'fixed-pitch :foreground gruvbox-faded_blue :background gruvbox-dark0))
-     (org-tag                                   (:inherit ('shadow 'fixed-pitch) :weight 'bold))
      (org-verbatim                              (:inherit ('shadow 'fixed-pitch)))
+     (org-tag                                   (:inherit ('shadow 'fixed-pitch) :weight 'bold))
+
+     (org-indent                                (:inherit ('org-hide 'fixed-pitch)))
+
+     (org-meta-line                             (:inherit ('font-lock-comment-face 'fixed-pitch)))
+     (org-special-keyword                       (:inherit ('font-lock-comment-face 'fixed-pitch)))
      (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
      (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
 
