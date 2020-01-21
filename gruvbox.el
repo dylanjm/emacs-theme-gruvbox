@@ -110,7 +110,7 @@
        ;; mode-line / header-line
        (mode-line           (:background gruvbox-dark0_soft :foreground gruvbox-light3 :distant-foreground gruvbox-dark0_soft))
        (mode-line-inactive  (:background gruvbox-dark0_hard :foreground gruvbox-light1 :distant-foreground gruvbox-dark0_hard))
-       (mode-line-emphasis  (:foreground highlight :distant-foreground gruvbox-dark0_soft))
+       (mode-line-emphasis  (:foreground gruvbox-light0 :distant-foreground gruvbox-dark0_soft))
        (mode-line-highlight (:inherit 'highlight :distant-foreground gruvbox-dark0_soft))
        (mode-line-buffer-id (:weight 'bold))
        (header-line (:inherit 'mode-line :distant-foreground gruvbox-dark0_soft))
