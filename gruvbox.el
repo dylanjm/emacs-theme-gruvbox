@@ -73,7 +73,6 @@
 
     ((cursor              (:background gruvbox-light0))
      (default             (:background gruvbox-bg :foreground gruvbox-light1))
-     (fixed-pitch         (:background gruvbox-bg :foreground gruvbox-light1))
      (fringe              (:background gruvbox-dark0_hard))
      (hl-line             (:background gruvbox-dark1 :extend t))
      (link                (:foreground gruvbox-faded_blue :underline t))
@@ -314,8 +313,8 @@
      (org-list-dt                               (:bold t :weight 'bold))
 
 
-     (org-document-title                        (:foreground gruvbox-faded_blue :height 220))
-     (org-document-info                         (:foreground gruvbox-faded_blue))
+     (org-document-title                        (:foreground gruvbox-faded_blue :height 240))
+
 
      (org-special-keyword                       (:inherit 'font-lock-comment-face))
      (org-agenda-structure                      (:inherit 'font-lock-comment-face))
@@ -327,10 +326,27 @@
      (org-headline-done                         (:foreground gruvbox-bright_aqua))
 
 
+     (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_soft :extend t))
+     (org-block                                 (:inherit 'fixed-pitch :background gruvbox-dark0_soft :extend t))
+     (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_soft :extend t))
+
+
+     (org-code                                  (:inherit ('shadow 'fixed-pitch)))
+     (org-document-info                         (:foreground gruvbox-faded_blue))
+     (org-document-info-keyword                 (:inherit ('shadow 'fixed-pitch) :foreground gruvbox-faded_orange))
+
+     (org-indent                                (:inherit ('org-hide 'fixed-pitch)))
+
+     (org-link                                  (:inherit 'fixed-pitch :foreground gruvbox-faded_aqua :background nil :underline t))
+     (org-meta-line                             (:inherit ('font-lock-comment-face 'fixed-pitch)))
+     (org-property-value                        (:inherit 'fixed-pitch))
+     (org-special-keyword                       (:inherit ('font-lock-comment-face 'fixed-pitch)))
+     (org-table                                 (:inherit 'fixed-pitch :foreground gruvbox-faded_blue :background gruvbox-dark0))
+
      (org-upcoming-deadline                     (:inherit 'fixed-pitch))
      (org-drawer                                (:inherit 'fixed-pitch))
-     (org-block                                 (:inherit 'fixed-pitch))
-     (org-property-value                        (:inherit 'fixed-pitch))
+
+
 
      (org-scheduled-today                       (:inherit 'fixed-pitch :foreground gruvbox-bright_blue))
      (org-scheduled-previously                  (:inherit 'fixed-pitch :foreground gruvbox-faded_red))
@@ -338,23 +354,11 @@
      (org-todo                                  (:inherit 'fixed-pitch :foreground gruvbox-bright_red :weight 'bold :bold t))
      (org-done                                  (:inherit 'fixed-pitch :foreground gruvbox-bright_aqua :weight 'bold :bold t))
      (org-agenda-done                           (:inherit 'fixed-pitch :foreground gruvbox-bright_aqua))
-     (org-link                                  (:inherit 'fixed-pitch :foreground gruvbox-faded_aqua :background nil :underline t))
+
      (org-formula                               (:inherit 'fixed-pitch :foreground gruvbox-bright_yellow :background gruvbox-dark0))
-     (org-table                                 (:inherit 'fixed-pitch :foreground gruvbox-faded_blue :background gruvbox-dark0))
 
-
-     (org-code                                  (:inherit ('shadow 'fixed-pitch)))
-     (org-document-info-keyword                 (:inherit ('shadow 'fixed-pitch)))
      (org-verbatim                              (:inherit ('shadow 'fixed-pitch)))
      (org-tag                                   (:inherit ('shadow 'fixed-pitch) :weight 'bold))
-
-     (org-indent                                (:inherit ('org-hide 'fixed-pitch)))
-
-     (org-meta-line                             (:inherit ('font-lock-comment-face 'fixed-pitch)))
-     (org-special-keyword                       (:inherit ('font-lock-comment-face 'fixed-pitch)))
-     (org-block-begin-line                      (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
-     (org-block-end-line                        (:inherit ('font-lock-comment-face 'fixed-pitch) :background gruvbox-dark0_hard :foreground gruvbox-dark4 :extend t))
-
 
 
      ;; org-habit
