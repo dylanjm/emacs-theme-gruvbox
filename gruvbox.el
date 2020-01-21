@@ -78,8 +78,8 @@
      (hl-line             (:background gruvbox-dark1 :extend t))
      (link                (:foreground gruvbox-faded_blue :underline t))
      (minibuffer-prompt   (:background gruvbox-dark0_hard :foreground gruvbox-bright_green :bold t))
-     (mode-line           (:background gruvbox-dark4 :foreground gruvbox-light1))
-     (mode-line-inactive  (:background gruvbox-dark3 :foreground gruvbox-light1))
+     (mode-line           (:background gruvbox-dark2 :foreground gruvbox-light1))
+     (mode-line-inactive  (:background gruvbox-dark1 :foreground gruvbox-light1))
      (region              (:background gruvbox-dark2 :extend t))
      (secondary-selection (:background gruvbox-dark1 :extend t))
      (shadow              (:foreground gruvbox-dark4))
@@ -449,6 +449,9 @@
      (ivy-minibuffer-match-highlight            (:inherit nil :foreground gruvbox-faded_orange :background gruvbox-dark0))
      (ivy-highlight-face                        (:inherit nil :foreground gruvbox-faded_orange :background gruvbox-dark0))
      (ivy-posframe-border (:background gruvbox-dark0_hard))
+
+     ;; selectrum
+     (selectrum-current-candidate (:background gruvbox-faded_orange :foreground gruvbox_light0 :weight 'bold))
 
      ;; swiper
      (swiper-line-face                (:foreground gruvbox-dark0_hard :background gruvbox-faded_yellow :extend t))
