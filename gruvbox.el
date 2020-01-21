@@ -451,7 +451,7 @@
      (ivy-posframe-border (:background gruvbox-dark0_hard))
 
      ;; selectrum
-     (selectrum-current-candidate (:background gruvbox-faded_orange :foreground gruvbox_light0 :weight 'bold))
+     (selectrum-current-candidate (:background gruvbox-faded_orange :foreground gruvbox-light0 :weight 'bold))
 
      ;; swiper
      (swiper-line-face                (:foreground gruvbox-dark0_hard :background gruvbox-faded_yellow :extend t))
