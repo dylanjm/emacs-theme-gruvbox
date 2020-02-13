@@ -629,9 +629,6 @@
        (epe-pipeline-time-face (:foreground gruvbox-light1))
        (epe-pipeline-delimiter-face (:foreground gruvbox-dark4))
 
-
-
-
        ;; tabbar
        (tabbar-default                             (:foreground gruvbox-light0 :background gruvbox-dark3 :bold nil :height 1.0 :box (:line-width -5 :color gruvbox-dark3)))
        (tabbar-separator                           (:foreground gruvbox-light0 :background gruvbox-dark3))
