@@ -616,6 +616,22 @@
        (eshell-ls-symlink-face                     (:foreground gruvbox-bright_red))
        (eshell-ls-unreadable-face                  (:foreground gruvbox-bright_red :bold t))
 
+       ;; eshell extras
+       (epe-remote-face      (:foreground gruvbox-bright_yellow))
+       (epe-venv-face        (:foreground gruvbox-bright_blue))
+       (epe-dir-face         (:foreground gruvbox-faded_aqua))
+       (epe-git-face         (:foreground gruvbox-faded_green))
+       (epe-symbol-face      (:foreground gruvbox-bright_purple))
+       (epe-sudo-symbol-face (:foreground gruvbox-dark_red))
+       (epe-status-face      (:foreground gruvbox-bright_red))
+       (epe-pipeline-host-face (:foreground gruvbox-faded_aqua))
+       (epe-pipeline-user-face (:foreground gruvbox-bright_purple))
+       (epe-pipeline-time-face (:foreground gruvbox-bright_yellow))
+       (epe-pipeline-delimiter-face (:foreground gruvbox-dark4))
+
+
+
+
        ;; tabbar
        (tabbar-default                             (:foreground gruvbox-light0 :background gruvbox-dark3 :bold nil :height 1.0 :box (:line-width -5 :color gruvbox-dark3)))
        (tabbar-separator                           (:foreground gruvbox-light0 :background gruvbox-dark3))
