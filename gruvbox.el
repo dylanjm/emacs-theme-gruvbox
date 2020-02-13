@@ -619,14 +619,14 @@
        ;; eshell extras
        (epe-remote-face      (:foreground gruvbox-bright_yellow))
        (epe-venv-face        (:foreground gruvbox-bright_blue))
-       (epe-dir-face         (:foreground gruvbox-faded_aqua))
-       (epe-git-face         (:foreground gruvbox-faded_green))
+       (epe-dir-face         (:foreground gruvbox-dark_aqua))
+       (epe-git-face         (:foreground gruvbox-bright_green))
        (epe-symbol-face      (:foreground gruvbox-bright_purple))
        (epe-sudo-symbol-face (:foreground gruvbox-dark_red))
        (epe-status-face      (:foreground gruvbox-bright_red))
        (epe-pipeline-host-face (:foreground gruvbox-faded_aqua))
-       (epe-pipeline-user-face (:foreground gruvbox-bright_purple))
-       (epe-pipeline-time-face (:foreground gruvbox-bright_yellow))
+       (epe-pipeline-user-face (:foreground gruvbox-bright_yellow))
+       (epe-pipeline-time-face (:foreground gruvbox-light1))
        (epe-pipeline-delimiter-face (:foreground gruvbox-dark4))
 
 
