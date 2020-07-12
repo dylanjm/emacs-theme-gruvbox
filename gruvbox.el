@@ -251,7 +251,7 @@
        (diredfl-autofile-name (:foreground gruvbox-light3))
        (diredfl-flag-mark-line (:foreground gruvbox-dark0_hard :background gruvbox-faded_yellow :weight 'bold))
        (diredfl-executable-tag (:foreground gruvbox-bright_purple :weight 'bold))
-       (diredfl-ignored-file-name (:foreground gruvbox-dark1))
+       ;;(diredfl-ignored-file-name (:foreground gruvbox-dark1))
        (diredfl-deletion-file-name (:foreground gruvbox-dark0_hard :background gruvbox-bright_red))
        (diredfl-tagged-autofile-name (:foreground gruvbox-dark4))
        (diredfl-compressed-file-name (:foreground gruvbox-light3))
