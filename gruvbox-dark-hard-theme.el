@@ -93,7 +93,7 @@
     (gruvbox-dark_red        "#421E1E" "#5f0000")
     (gruvbox-dark_blue       "#2B3C44" "#000087")
     (gruvbox-dark_aqua       "#36473A" "#005f5f")
-    (gruvbox-dark_purple     "#66234d" "#d787af")
+    (gruvbox-dark_purple     "#66234d" "#6b1f4f")
 
     (gruvbox-delimiter-one   "#458588" "#008787")
     (gruvbox-delimiter-two   "#b16286" "#d75f87")
